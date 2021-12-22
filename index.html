@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikki's Wedding Site</title>
+  <link href="project_style.css" rel="Stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500&family=Comfortaa:wght@500&family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    
+    <h1>Wedding Invitation Designer</h1>
+      
+    <div class="flex-container">
+
+        <div id="flex-item-left" style= "background-image: url('./images/drinks.jpg')">
+
+            <p class="flex-item-left">You are invited to the wedding of </p>
+      
+            <p class="flex-item-left" id="demoNames"></p>
+      
+            <p class="flex-item-left" id="demoDate"></p>
+      
+            <p class="flex-item-left" id="demoLocation"></p>
+
+            <p class="flex-item-left" id="demoRsvp"></p>
+
+        </div>
+
+        <div class="flex-item-right">
+
+            <h2>Themes:</h2>
+            <button onclick="drinkImage(); changeDrinkFont();">Drinks</button>
+    
+            <button onclick="palmImage(); changePalmFont();">Couple</button>
+    
+            <button onclick="flamingoImage(); changeFlamingoFont();">Flamingo</button>
+    
+            <br> <br> <br>
+    
+            <label for="name1">Bride's name</label> <br> 
+            <input type="text" id="name1" placeholder="first name" oninput="nameFunction()"> <br> <br>
+        
+            <label for="name2">Groom's name</label> <br> 
+            <input type="text" id="name2" placeholder="first name" oninput="nameFunction()"> <br> <br>
+         
+            <label for="weddingDate">Date</label> <br> 
+            <input type="date" id="weddingDate" oninput="dateFunction()"> <br> <br>
+        
+            <label for="location">Wedding location</label> <br> 
+            <input type="text" id="location" placeholder="suburb" oninput="locationFunction()"> <br> <br>
+
+            <label for="rsvp">RSVP to</label> <br> 
+            <input type="tel" id="rsvp" name="phone"
+            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" size="12" placeholder="0400-000-000" oninput="rsvpFunction()"> <br> <br>
+
+        </div>
+
+    </div>
+
+  </div>
+
+<br> 
+<br> 
+<br> 
+<br> 
+
+<script src="project.js"></script>
+
+
+
+
+<footer style="
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+">
+
+    <div>This page has been created by <a href="https://github.com/vikkimason" target="_blank">Vikki</a> for her Academy Xi second project, in December 2021.</div>
+    
+</footer>
+
+</body>
+
+</html>
